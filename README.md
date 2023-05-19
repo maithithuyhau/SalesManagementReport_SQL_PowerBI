@@ -12,7 +12,7 @@ Sales budgets, one data source, were sent to the process in Excel format and aft
 
 The necessary SQL statements for data cleansing and transformation are listed below.
 
-### DIM_Calendar:
+### 1.DIM_Calendar:
       SELECT
       ,[DateKey]
       ,[FullDateAlternateKey] As Date
@@ -26,7 +26,7 @@ The necessary SQL statements for data cleansing and transformation are listed be
       FROM [AdventureWorksDW2019].[dbo].[DimDate]
       ,Where [CalendarYear] >=2019
      
-### DIM_Products:
+### 2.DIM_Products:
       SELECT 
        p.[ProductKey], 
        p.[ProductAlternateKey] AS ProductItemCode, 
@@ -45,7 +45,7 @@ The necessary SQL statements for data cleansing and transformation are listed be
       LEFT JOIN dbo.DimProductCategory AS pc ON ps.ProductCategoryKey = pc.ProductCategoryKey 
       order by 
       p.ProductKey asc
-### DIM_Customers
+### 3.DIM_Customers
       SELECT 
        c.customerkey AS CustomerKey, 
        c.firstname AS [First Name], 
@@ -59,7 +59,7 @@ The necessary SQL statements for data cleansing and transformation are listed be
       LEFT JOIN dbo.dimgeography AS g ON g.geographykey = c.geographykey 
       ORDER BY 
       CustomerKey ASC -- Ordered List by CustomerKey
-### FACT_InternetSales
+### 4.FACT_InternetSales
       SELECT 
       [ProductKey], 
       [OrderDateKey], 
@@ -85,7 +85,15 @@ One page serves as the dashboard and overview for the completed sales management
 
 [SEE DASHBOARD POWER BI HERE](https://app.powerbi.com/groups/me/reports/02856bf3-b084-40d2-b6eb-44388c89f5a2/ReportSection)
 
+### 1. Sales Overview
 <img width="643" alt="dashboard" src="https://github.com/maithithuyhau/SalesManagementReport_SQL_PowerBI/assets/93932176/cd6b4c9b-a45c-46ab-9bb8-b247896b832f">
 
+### 2. Customer Details
+
+<img width="614" alt="dashboardCutomer" src="https://github.com/maithithuyhau/SalesManagementReport_SQL_PowerBI/assets/93932176/89d1c79c-923f-4dfd-b192-c5b8acd9de1b">
+
+### 3.Product Details
+
+<img width="613" alt="dashboardProduct" src="https://github.com/maithithuyhau/SalesManagementReport_SQL_PowerBI/assets/93932176/b40dc18b-7c5c-4155-84fc-c8e763b46c05">
 
 
