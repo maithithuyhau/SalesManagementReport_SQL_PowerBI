@@ -15,11 +15,10 @@ The necessary SQL statements for data cleansing and transformation are listed be
 SELECT
 [DateKey]
       ,[FullDateAlternateKey] As Date
-
       ,[EnglishDayNameOfWeek]
       ,[WeekNumberOfYear] as weeknum
       ,[EnglishMonthName] as Month
-	  ,left ([EnglishMonthName],3) as Monthshort
+      ,left ([EnglishMonthName],3) as Monthshort
       ,[MonthNumberOfYear] as MonthNo
       ,[CalendarQuarter] as Quarter
       ,[CalendarYear] as Year
