@@ -2,6 +2,7 @@
 ## User stories & Business requests
 An executive sales report for sales managers was the business request for this data analyst project. 
 User stories were established to complete delivery and guarantee that acceptance criteria were upheld throughout the project based on the request that was made by the company.
+
 <img width="353" alt="user story" src="https://github.com/maithithuyhau/SalesManagementReport_SQL_PowerBI/assets/93932176/0c1f3865-60fa-4586-acef-f61cfbb9058d">
 
 ## Data Transformation & Cleaning (SQL)
@@ -78,8 +79,10 @@ The necessary SQL statements for data cleansing and transformation are listed be
 
 - This data model also demonstrates the connections between FACT_Budget, FACT_InternetSales, and other essential DIM tables.
 <img width="373" alt="01" src="https://github.com/maithithuyhau/SalesManagementReport_SQL_PowerBI/assets/93932176/5a5954a6-16a4-4d27-8b7a-1327ad1bcd42">
+
 ## Management Dashboard for Sales
 One page serves as the dashboard and overview for the completed sales management dashboard, while the other two pages combine tables to provide the essential details and visualizations to show sales over time, by customers, and by items.
+
 <img width="643" alt="dashboard" src="https://github.com/maithithuyhau/SalesManagementReport_SQL_PowerBI/assets/93932176/cd6b4c9b-a45c-46ab-9bb8-b247896b832f">
 
 
