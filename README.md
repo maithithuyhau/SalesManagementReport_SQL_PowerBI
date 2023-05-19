@@ -83,6 +83,8 @@ The necessary SQL statements for data cleansing and transformation are listed be
 ## Management Dashboard for Sales
 One page serves as the dashboard and overview for the completed sales management dashboard, while the other two pages combine tables to provide the essential details and visualizations to show sales over time, by customers, and by items.
 
+[SEE DASHBOARD POWER BI HERE](https://app.powerbi.com/groups/me/reports/02856bf3-b084-40d2-b6eb-44388c89f5a2/ReportSection)
+
 <img width="643" alt="dashboard" src="https://github.com/maithithuyhau/SalesManagementReport_SQL_PowerBI/assets/93932176/cd6b4c9b-a45c-46ab-9bb8-b247896b832f">
 
 
