@@ -12,8 +12,9 @@ Sales budgets, one data source, were sent to the process in Excel format and aft
 The necessary SQL statements for data cleansing and transformation are listed below.
 
 ### DIM_Calendar:
-SELECT
-[DateKey]
+,SELECT
+,[DateKey]
+      
       ,[FullDateAlternateKey] As Date
       ,[EnglishDayNameOfWeek]
       ,[WeekNumberOfYear] as weeknum
@@ -22,5 +23,6 @@ SELECT
       ,[MonthNumberOfYear] as MonthNo
       ,[CalendarQuarter] as Quarter
       ,[CalendarYear] as Year
-  FROM [AdventureWorksDW2019].[dbo].[DimDate]
-  Where [CalendarYear] >=2019
+      
+ , FROM [AdventureWorksDW2019].[dbo].[DimDate]
+  ,Where [CalendarYear] >=2019
